@@ -10,18 +10,10 @@ const USERNAME_KEY = "username";
 function onLoginSummit(event) {
   event.preventDefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);
-  const usernameThatTheUserWrote = loginInput.value;
-  localStorage.setItem(USERNAME_KEY, usernameThatTheUserWrote);
-  paintGreetins(usernameThatTheUserWrote);
+  const username = loginInput.value;
+  localStorage.setItem(USERNAME_KEY, username);
+  paintGreetins(username);
 }
-
-function handleLinkClick(event) {
-  event.preventDefault();
-  console.dir(event);
-  alert("linked!!");
-}
-
-loginForm.addEventListener("submit", onLoginSummit);
 
 function paintGreetins(username) {
   greeting.innerText = `hello ${username}`;
