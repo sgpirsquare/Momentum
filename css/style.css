@@ -1,7 +1,80 @@
-body {
-  background-color: beige;
-}
-
 .hidden {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 18px;
+  color: floralwhite;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* 배경화면 사진이 윈도우 창에 꽉차면서 사진을 한 장만 사용하고 높이와 너비가 창 크기에 따라 반응적으로 움직이도록 하는 CSS, 커버를 따로 만드는 것보다 filter를 씌워 글씨의 가독성을 높이기 */
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  text-align: center;
+
+  flex-direction: column;
+  align-items: center;
+  max-height: 60vh;
+
+  #clock {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  /* #login-form {
+  }
+
+  #greeting {
+  }
+
+  #todo-form {
+  }
+
+  #todo-list {
+  } */
+}
+
+#quote {
+  color: whitesmoke;
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#weather {
+  color: whitesmoke;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  li:first-child {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  li:last-child {
+    margin-top: -10px;
+  }
 }

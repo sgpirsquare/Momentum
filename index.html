@@ -8,24 +8,34 @@
   </head>
 
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="what is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
-    <!-- hidden 안에 hidden을 넣으니 안 나왔을 수밖에?!!
+    <main>
+      <h1 id="clock">00:00:00</h1>
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="이름이 무엇입니까?"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+      <h2 class="hidden" id="greeting"></h2>
+      <!-- hidden 안에 hidden을 넣으니 안 나왔을 수밖에?!!
     h1 id greeting 을 form안에 넣었으니 그랬던 것임 -->
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="할 일을 적고 엔터키를 누르세요!"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </main>
     <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
       <span></span>
       <span></span>
     </div>
@@ -35,5 +45,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
