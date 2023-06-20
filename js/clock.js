@@ -1,4 +1,6 @@
-const clock = document.querySelector("h2#clock");
+const clock = document.querySelector("h1#clock");
+//HTML에서 h2에서 h1으로 태그를 바꿨더니 아래 clock.innerText에서 오류가 떴음
+//const clock = document.querySelector("h2#clock");에서 h1으로 고쳐줘야 정확히 들어감
 
 function getClock() {
   const date = new Date();

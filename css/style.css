@@ -40,6 +40,7 @@ main {
   #clock {
     margin: 0%;
     padding: 0%;
+    font-size: min(15vh, 15vw);
   }
 
   /* #login-form {
@@ -64,6 +65,8 @@ main {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  font-size: min(3vw, 3vh)
+  /*vw와 vh 단위에 대해*/
 }
 
 #weather {
