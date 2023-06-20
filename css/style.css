@@ -12,11 +12,18 @@ body {
   font-size: 18px;
   color: floralwhite;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /* 글씨에 테두리 넣는 디자인 추가함 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* 배경화면 사진이 윈도우 창에 꽉차면서 사진을 한 장만 사용하고 높이와 너비가 창 크기에 따라 반응적으로 움직이도록 하는 CSS, 
+  출처 https://a11chan.github.io/my-momentum/ 감사합니다
+
+  커버를 따로 만드는 것보다 filter를 씌워 글씨의 가독성을 높이기는...안되었음;;;
+  
+  
+  */
 }
-/* 배경화면 사진이 윈도우 창에 꽉차면서 사진을 한 장만 사용하고 높이와 너비가 창 크기에 따라 반응적으로 움직이도록 하는 CSS, 커버를 따로 만드는 것보다 filter를 씌워 글씨의 가독성을 높이기 */
 
 main {
   position: absolute;
@@ -43,9 +50,9 @@ main {
 
   #todo-form {
   }
-
+*/
   #todo-list {
-  } */
+  }
 }
 
 #quote {
