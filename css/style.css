@@ -31,8 +31,6 @@ main {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   display: flex;
-  text-align: center;
-
   flex-direction: column;
   align-items: center;
   max-height: 60vh;
@@ -45,14 +43,38 @@ main {
 
   /* #login-form {
   }
-
-  #greeting {
-  }
-
-  #todo-form {
-  }
 */
-  #todo-list {
+  #greeting {
+    font-size: 40px;
+    margin: 0%;
+    margin-bottom: 20px;
+  }
+
+  #todo-form input {
+    width: 500px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 4px solid white;
+  }
+
+  #todo-form input::placeholder {
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  #todo-list li {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    font-size: min(38px, 3.5vw);
+    text-align: left;
+  }
+
+  #todo-list li button {
+    border: none;
+    background-color: transparent;
   }
 }
 
@@ -65,7 +87,7 @@ main {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: min(3vw, 3vh)
+  font-size: min(3vw, 3vh);
   /*vw와 vh 단위에 대해*/
 }
 
