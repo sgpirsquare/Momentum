@@ -41,37 +41,76 @@ main {
     font-size: min(15vh, 15vw);
   }
 
-  /* #login-form {
+  #login-form{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
   }
-*/
-  #greeting {
-    font-size: 40px;
-    margin: 0%;
-    margin-bottom: 20px;
-  }
-
-  #todo-form input {
-    width: 500px;
+  
+  #login-form input{
     height: 30px;
+    background: transparent;
     border: none;
-    outline: none;
-    background-color: transparent;
-    border-bottom: 4px solid white;
+    outline: 0;
+    color:white;
+    
+    
+  }
+  
+  #login-form input:last-child{
+    color:black
   }
 
+  #login-form input[type="text"]:focus{
+
+    font-size: 20px;
+    border: none;
+    outline: none; }
+    
+  #login-form input::placeholder{
+      color:white;
+      background-color: transparent;
+      border-bottom: 4px solid white;
+      font-size: 20px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+      
+    }
+    
+    #greeting {
+      font-size: 40px;
+      margin: 0%;
+      margin-bottom: 20px;
+    }
+    
+    #todo-form input {
+      
+      width: 400px;
+      height: 30px;
+      margin-top: 20px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      border-bottom: 4px solid white;
+  }
+  #todo-form input[type="text"]:focus{
+  
+    font-size: 20px;
+    border: none;
+    outline: none; }
+  
   #todo-form input::placeholder {
     color: white;
+    background-color: transparent;
     font-size: 20px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
-
+  
   #todo-list li {
     display: grid;
     grid-template-columns: 9fr 1fr;
     font-size: min(38px, 3.5vw);
     text-align: left;
   }
-
+  
   #todo-list li button {
     border: none;
     background-color: transparent;
